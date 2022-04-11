@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500&display=swap');
+
+*{
+    font-family: 'Anek Devanagari', sans-serif;
+    margin:0;padding:0;
+    box-sizing:border-box;
+    outline:none;
+    border:none;
+    text-decoration:none;
+    text-transform:capitalize;
+    transition:all .2s linear;
+}
+
+.container{
+    padding:80px 10%;
+    background:linear-gradient(45deg,#f06868,lightblue);
+    display:flex;
+}
+.profile{
+    background:#283C63;
+    border-right:2px solid blue;
+    flex:1 1 400px;
+    padding:30px 20px;
+    text-align:center;
+    position:sticky;
+    top:20px;left:0;
+    
+}
+.profileImg{
+    height:150px;
+    width:120px;
+    border-radius:50%;
+    border:1px solid lightblue;
+    object-fit:cover;
+    margin-bottom:10px;
+}
+.profileTitle{
+    color:white;
+    padding:5px 0;
+    margin-bottom:5px;
+    font-size:40px;
+}
+.content{
+    font-family: 'Anek Devanagari', sans-serif;
+    color:white;
+    font-size:30px;
+}
+.socialMedia{
+    margin:10px 0;
+    height:40px;
+    width:40px;
+    line-height:50px;
+    font-size:20px;
+    border-radius:50%;
+}
+button {
+    margin:10px 10px;
+    display:inline-block;
+    padding:6px 15px;
+    border-radius:30px;
+    font-size:20px; 
+    color: white;
+    cursor: pointer;
+  }
+  button:hover {
+    box-shadow: 1px 1px 50px;
+    cursor: pointer;
+  }
+  .myInfo{
+    background:white;
+    padding:20px 20px;
+    flex:1 1 1000px;
+    }
+.infoTitle{
+    font-size:25px;
+    color:black;
+    margin-bottom:15px;
+}
+#p-content{
+    font-size: 20px;
+    font-family: 'Anek Devanagari', sans-serif
+  }
+  #card-content{
+    font-size: 20px;
+    font-family: 'Anek Devanagari', sans-serif;
+  }
+  #card-content-small{
+    font-size: 15px;
+    font-family: 'Anek Devanagari', sans-serif;
+  }
+  .left-cell{
+    width:50%;
+    height:15px;
+  }
+  .right-cell{
+    width:50%;
+    height:15px;
+  }
+  .card {
+    background-color: rgb(241, 239, 239);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border:1px solid black;
+  }
+  .card-img {
+    padding:5px 10px;
+    margin-top:2px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 30px;
+  }
+  .card-details {
+    font-size: 12px;
+    font-weight: bolder;
+    padding-top: 1px;
+  }
+  .card-description {
+    font-size: 12px;
+    padding-top: 1px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 6px;
+    margin-right: 5px;
+  }
+  @media(max-width:1024px){
+    .container{
+        flex-flow:column;
+        padding:20px;
+        justify-content:center;
+    }
+    .profile{
+        position:static;  
+        border-radius:5px;
+        padding:20px;
+        margin:0 auto;
+        border-right:none;
+        margin-bottom:5px;
+      }
+      .myInfo{
+        border-radius:5px;
+        padding:20px;
+      }
+}
+@media(max-width:400px){
+    .container{
+        flex-flow:column;
+        padding:20px;
+        justify-content:center;
+    }
+    .profile{
+    width:100%;
+    }
+    #p-content{
+        font-size:14px;
+    }
+    button{
+        width:100%;
+    }
+}
+.formStyle{
+    padding:100px 10% 1000px;
+    background:linear-gradient(45deg,#f06868,lightblue);
+    display:flex;
+}

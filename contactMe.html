@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./FinalAss.js"></script>
+    <title>Contact me</title>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Devanagari:wght@100;200;300;400;500" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+    <form class="formStyle" action="https://httpbin.org/post" method="post">
+        <fieldset>
+            <h3 class="infoTitle">Contact Me</h3>
+            <div class="p-content">
+                <label  for="fname">Name:</label>
+                <input required="required" type="text" id="fname" name="first-name" size="20" maxlength="20" placeholder="Enter Name"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Email:</label>
+                <input required="required" type="email" name="email"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">Street Address:</label>
+                <input type="text" name="address"><br>
+            </div>
+            <br>
+            <div>
+                <label for="">City:</label>
+                <input list="city" name="city"><br>
+                <datalist id="city">
+                    <option value="Ottawa"></option>
+                    <option value="Toronto"></option>
+                    <option value="Montreal"></option>
+                    <option value="Vancouver"></option>
+                    <option value="Quebec city"></option>
+                    <option value="Calgary"></option>
+                    <option value="Edmonton"></option>
+                    <option value="Halifax"></option>
+                </datalist>
+            </div>
+            <br>
+            <div>
+                <label for="">Post Code:</label>
+                <input type="text" name="Post Code" placeholder="No Space"
+                required pattern="^([A-Za-z])([0-9])([A-Za-z])([0-9])[A-Za-z])[0-9])$" >
+            </div>
+            <br>
+            <div>
+                <label  for="">How well the skills match the job description: </label><br>
+                <input type="range"       name="entry13" min="0" max="100" step="5" value="90"><br>
+            </div>
+            <br>
+            <div>
+                <label  for="">What would you like to do: </label><br>
+                <input type="radio" name="option" value="Question" checked>Question
+                <input type="radio" name="option" value="Comment" >Comment
+                <input type="radio" name="option" value="Hiring" onclick="inputBox()" >Hiring
+                <input type="text" onclick="inputText()">
+                
+            </div>
+            <br>
+            <p>Your Message</p> 
+            <textarea name="message" cols="80" rows="6" style="text-transform:lowercase" placeholder="Please leave message if you have something want to tell me. I will contact you soon."></textarea>
+            <div id='errors'></div>
+            <br>
+            <p>
+               <input type='submit' name="entry19" value='  Submit  '>&nbsp;&nbsp;&nbsp;&nbsp;
+            <input type='reset'  name="entry20" value='    Clear   '>
+            </p> 
+        <br>
+        <div>
+        </div>
+</form>
+</body>
+</html>
